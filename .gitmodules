@@ -1,0 +1,12 @@
+[submodule "client"]
+	path = client
+	url = https://github.com/arthurGuillemin/GomiFrontend.git
+[submodule "server"]
+	path = server
+	url = https://github.com/arthurGuillemin/GomiBackend
+[submodule "ai-recipe"]
+	path = ai-recipe
+	url = https://github.com/arthurGuillemin/RecipeMaker
+[submodule "ai-trie"]
+	path = ai-trie
+	url = https://github.com/arthurGuillemin/Classifier_IA
