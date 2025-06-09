@@ -157,7 +157,4 @@ python app.py
 
 ### 👨‍💻 Auteurs
 
-Arthur Guillemin – [Hugging Face](https://huggingface.co/ankz22)
-Kelly Gama - [Github](https://github.com/yelineeee)
-Emilie Caverne [Github](https://github.com/emilie-caverne)
-Ryan Annic [Github](https://github.com/gladiaaa)
+Arthur Guillemin – [Hugging Face](https://huggingface.co/ankz22)  --  Kelly Gama - [Github](https://github.com/yelineeee)  --  Emilie Caverne - [Github](https://github.com/emilie-caverne)  --  Ryan Annic - [Github](https://github.com/gladiaaa)
