@@ -27,6 +27,14 @@ Ce repository principal utilise des **submodules Git** pour organiser le code :
 ```bash
 git clone --recurse-submodules https://github.com/arthurGuillemin/Gomi.git
 ```
+## 📦 Submodules Hugging Face
+
+Les projets IA sont des submodules Git, même s’ils sont hébergés sur Hugging Face :
+
+- [`ia/ai-trie`](https://huggingface.co/spaces/ankz22/trash-classifier)
+- [`ia/ai-recipe`](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2)
+
+> **Note :** GitHub ne crée pas de lien cliquable automatiquement pour ces submodules, car Hugging Face n’est pas reconnu comme un provider Git natif.
 
 ---
 
@@ -90,16 +98,6 @@ pip install -r requirements.txt
 ollama run llava
 python app.py
 ```
-
-
-## 📦 Submodules Hugging Face
-
-Les projets IA sont des submodules Git, même s’ils sont hébergés sur Hugging Face :
-
-- [`ia/ai-trie`](https://huggingface.co/spaces/ankz22/trash-classifier)
-- [`ia/ai-recipe`](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2)
-
-> **Note :** GitHub ne crée pas de lien cliquable automatiquement pour ces submodules, car Hugging Face n’est pas reconnu comme un provider Git natif.
 
 ---
 
