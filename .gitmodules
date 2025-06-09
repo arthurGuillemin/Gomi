@@ -4,9 +4,12 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/arthurGuillemin/GomiBackend
-[submodule "ai-recipe"]
-	path = ai-recipe
-	url = https://github.com/arthurGuillemin/RecipeMaker
-[submodule "ai-trie"]
-	path = ai-trie
-	url = https://github.com/arthurGuillemin/Classifier_IA
+[submodule "AI/ai-recipeV2"]
+	path = AI/ai-recipeV2
+	url = https://huggingface.co/spaces/ankz22/Fridge_recipe_app2.git
+[submodule "AI/ai-trie"]
+	path = AI/ai-trie
+	url = https://huggingface.co/spaces/ankz22/trash-classifier.git
+[submodule "AI/ai-recipe-Ollama"]
+	path = AI/ai-recipe-Ollama
+	url = https://github.com/gladiaaa/RecipeMakerIA.git
