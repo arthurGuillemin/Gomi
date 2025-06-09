@@ -31,8 +31,8 @@ git clone --recurse-submodules https://github.com/arthurGuillemin/Gomi.git
 
 Les projets IA sont des submodules Git, même s’ils sont hébergés sur Hugging Face :
 
-- [`ia/ai-trie`](https://huggingface.co/spaces/ankz22/trash-classifier)
-- [`ia/ai-recipe`](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2)
+- [`ia/ai-trie`](https://huggingface.co/spaces/ankz22/trash-classifier/tree/main)
+- [`ia/ai-recipe`](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2/tree/main)
 
 > **Note :** GitHub ne crée pas de lien cliquable automatiquement pour ces submodules, car Hugging Face n’est pas reconnu comme un provider Git natif.
 
@@ -105,7 +105,7 @@ python app.py
 
 - **Frontend** : React, Vite
 - **Backend** : Flask, Gunicorn, Supabase ,  Werkzeug , marshmallow, pytest 
-- **IA** : Gradio, Transformers , torch , torchvision , pillow
+- **IA** : Gradio, Transformers , torch , torchvision , pillow , ollama
 - **DevOps** : Docker, Github Actions , Git Submodules, Hugging Face Spaces, netlify , Azure
 
 ---
