@@ -30,6 +30,17 @@ git clone --recurse-submodules https://github.com/arthurGuillemin/Gomi.git
 
 ---
 
+## 🌍 Déploiement
+
+- 🌐 **App principale** (frontend) : [Netlify](https://gomiproject.netlify.app/)
+- 🧠 **IA tri des déchets** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/trash-classifier)
+- 🍳 **IA recettes** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2)
+- 🗄️ **Backend** : [Azure Web App](https://flask-backend-gomi-hbbjbyc9agend4fh.francecentral-01.azurewebsites.net)
+
+---
+
+---
+
 ## 🚀 Lancement (optionnel)
 
 L'application est **déjà déployée**. Le lancement local n’est **pas oblgatoire**.
@@ -80,16 +91,6 @@ ollama run llava
 python app.py
 ```
 
----
-
-## 🌍 Déploiement
-
-- 🌐 **App principale** (frontend) : [Netlify](https://gomiproject.netlify.app/)
-- 🧠 **IA tri des déchets** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/trash-classifier)
-- 🍳 **IA recettes** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2)
-- 🗄️ **Backend** : [Azure Web App](https://flask-backend-gomi-hbbjbyc9agend4fh.francecentral-01.azurewebsites.net)
-
----
 
 ## 📦 Submodules Hugging Face
 
