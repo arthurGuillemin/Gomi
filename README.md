@@ -105,7 +105,7 @@ python app.py
 
 - **Frontend** : React, Vite
 - **Backend** : Flask, Gunicorn, Supabase ,  Werkzeug , marshmallow, pytest 
-- **IA** : Gradio, Transformers , torch , torchvision , pillow
+- **IA** : Gradio, Transformers , torch , torchvision , pillow , ollama
 - **DevOps** : Docker, Github Actions , Git Submodules, Hugging Face Spaces, netlify , Azure
 
 ---
