@@ -41,8 +41,8 @@ Les projets IA sont des submodules Git, même s’ils sont hébergés sur Huggin
 ## 🌍 Déploiement
 
 - 🌐 **App principale** (frontend) : [Netlify](https://gomiproject.netlify.app/)
-- 🧠 **IA tri des déchets** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/trash-classifier)
-- 🍳 **IA recettes** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2)
+- 🧠 **IA tri des déchets** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/trash-classifier/tree/main)
+- 🍳 **IA recettes** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2/tree/main)
 - 🗄️ **Backend** : [Azure Web App](https://flask-backend-gomi-hbbjbyc9agend4fh.francecentral-01.azurewebsites.net)
 
 ---
