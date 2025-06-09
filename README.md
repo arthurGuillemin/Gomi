@@ -9,7 +9,10 @@ GOMI est une application web fullstack permettant de :
 
 ---
 
-## 📁 Structure du projet
+## 🏗️ Architecture & Infrastructure
+
+
+### 📁 Structure du projet
 
 Ce repository principal utilise des **submodules Git** pour organiser le code :
 
@@ -23,30 +26,71 @@ Ce repository principal utilise des **submodules Git** pour organiser le code :
     └── ai-recipe-ollama/  #V1 de l'ia pour generation de la recette (Flask + Ollama)
 ```
 
-⚠️ Tous les submodules doivent être initialisés après un clone :
-```bash
-git clone --recurse-submodules https://github.com/arthurGuillemin/Gomi.git
-```
-## 📦 Submodules Hugging Face
+### 📦 Submodules Hugging Face
 
 Les projets IA sont des submodules Git, même s’ils sont hébergés sur Hugging Face :
 
-- [`ia/ai-trie`](https://huggingface.co/spaces/ankz22/trash-classifier/tree/main)
-- [`ia/ai-recipe`](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2/tree/main)
+- [`AI/ai-trie`](https://huggingface.co/spaces/ankz22/trash-classifier/tree/main)
+- [`AI/ai-recipe`](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2/tree/main)
 
 > **Note :** GitHub ne crée pas de lien cliquable automatiquement pour ces submodules, car Hugging Face n’est pas reconnu comme un provider Git natif.
 
 ---
+### ⚙️ Intégration continue (CI)
 
-## 🌍 Déploiement
+#### Frontend (`client/`)
 
-- 🌐 **App principale** (frontend) : [Netlify](https://gomiproject.netlify.app/)
+![Frontend CI](https://github.com/arthurGuillemin/GomiFrontend/actions/workflows/react-ci.yml/badge.svg)
+
+Utilise **GitHub Actions** pour :
+
+- Vérifier le code avec `eslint`
+- Construire le projet (`npm run build`)
+
+#### Backend (`server/`)
+
+![Backend CI](https://github.com/arthurGuillemin/GomiBackend/actions/workflows/docker-push.yml/badge.svg)
+
+GitHub Actions automatise :
+
+- L’installation des dépendances Python
+- L’exécution des tests unitaires (`pytest`)
+- Le build et le push de l’image Docker vers Docker Hub
+
+ Les secrets (ex : SUPABASE, JWT) sont stockés de façon sécurisée via **GitHub Secrets**.
+
+---
+
+
+### 🐳 Conteneurisation & Orchestration
+
+- Le backend Flask est conteneurisé via un **Dockerfile**.
+- Un **docker-compose.yml** orchestre :
+  - Le serveur Flask
+  - Un reverse proxy **Nginx**
+- L’image backend est automatiquement pushée sur [Docker Hub](https://hub.docker.com/r/arthurguill/flask-backend-gomi) à chaque push sur `main`.
+
+---
+
+### 📄 Documentation API
+
+- Documentation Swagger générée automatiquement avec **Flasgger**
+- Accessible via `/apidocs` (en local ou en prod)
+
+---
+
+### 🌍 Déploiement
+
+- 🌐 **App principale** (frontend) : [Netlify](https://gomiproject.netlify.app/)  [![Status](https://api.netlify.com/api/v1/badges/1de4ad27-8826-4111-b733-ca72787f7b4d/deploy-status)](https://app.netlify.com/projects/gomiproject/deploys)
 - 🧠 **IA tri des déchets** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/trash-classifier)
 - 🍳 **IA recettes** (Gradio) : [Hugging Face](https://huggingface.co/spaces/ankz22/Fridge_recipe_app2)
 - 🗄️ **Backend** : [Azure Web App](https://flask-backend-gomi-hbbjbyc9agend4fh.francecentral-01.azurewebsites.net)
 
 ---
-
+⚠️ Tous les submodules doivent être initialisés après un clone :
+```bash
+git clone --recurse-submodules https://github.com/arthurGuillemin/Gomi.git
+```
 ---
 
 ## 🚀 Lancement (optionnel)
@@ -101,7 +145,7 @@ python app.py
 
 ---
 
-## 📚 Techs utilisées
+### 📚 Techs utilisées
 
 - **Frontend** : React, Vite
 - **Backend** : Flask, Gunicorn, Supabase ,  Werkzeug , marshmallow, pytest 
@@ -111,7 +155,7 @@ python app.py
 ---
 
 
-## 👨‍💻 Auteurs
+### 👨‍💻 Auteurs
 
 Arthur Guillemin – [Hugging Face](https://huggingface.co/ankz22)
 Kelly Gama - [Github](https://github.com/yelineeee)
