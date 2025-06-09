@@ -147,7 +147,7 @@ python app.py
 
 ### 📚 Techs utilisées
 
-- **Frontend** : React, Vite
+- **Frontend** : React, Vite , vite-plugin-pwa
 - **Backend** : Flask, Gunicorn, Supabase ,  Werkzeug , marshmallow, pytest 
 - **IA** : Gradio, Transformers , torch , torchvision , pillow , ollama
 - **DevOps** : Docker, Github Actions , Git Submodules, Hugging Face Spaces, netlify , Azure
